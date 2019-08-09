@@ -1,8 +1,10 @@
 #include<stdio.h>
 int main(){
 
-int length=1,n,i,j,max=1,a;
-printf("Type 2 number\n");
+int length=1,n,i,j,max=1,a,t;
+scanf("%d",&t);
+while(t--){
+
 scanf("%d %d",&i,&j);
 for(a=i;a<=j;a++){
 length=1;
@@ -22,5 +24,7 @@ while (n>1) {
 if(max<length)
 max=length;
 }
-printf("%d %d %d",i,j,max);
+printf("%d %d %d\n",i,j,max);
+max=0;
+}
 }
